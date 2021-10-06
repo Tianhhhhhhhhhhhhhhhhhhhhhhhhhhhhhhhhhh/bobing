@@ -1,5 +1,7 @@
 <!--pages/begin/begin.wxml-->
 
-<image style="position: relative; left: 102rpx; top: 414rpx" src="..\images\右对联.png" />
+<image mode="aspectFit"  style="position: relative; left: 500rpx; top: 339rpx; width: 162rpx; height: 461rpx; display: inline-block; box-sizing: border-box" src="../images/右对联.png" />
+<image mode="aspectFit"  style="position: fixed; left: 77rpx; top: 339rpx; width: 243rpx; height: 461rpx; display: block; box-sizing: border-box" src="../images/左对联.png" />
+
 
 
