@@ -1,0 +1,5 @@
+<!--pages/begin/begin.wxml-->
+
+<image style="position: relative; left: 102rpx; top: 414rpx" src="..\images\右对联.png" />
+
+
