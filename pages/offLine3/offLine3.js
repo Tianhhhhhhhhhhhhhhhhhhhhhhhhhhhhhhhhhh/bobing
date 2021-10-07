@@ -1,15 +1,6 @@
-// pages/begin/begin.js
+// pages/offLine3/offLine3.js
 Page({
-tapHowTo(){
-  wx.navigateTo({
-    url: '../howTo/howTo',
-  })
-},
-tapLeaving(){
-  wx.navigateTo({
-    url: '../leaving/leaving',
-  }) 
-},
+
   /**
    * 页面的初始数据
    */

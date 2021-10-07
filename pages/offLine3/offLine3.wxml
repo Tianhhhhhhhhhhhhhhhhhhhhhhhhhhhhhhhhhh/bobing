@@ -1,0 +1,22 @@
+<!--pages/offLine3/offLine3.wxml-->
+
+<image mode="aspectFit"  style="position: fixed; left: 125rpx; top: 540rpx; width: 493rpx; height: 174rpx; display: block; box-sizing: border-box"
+  src="../images/yourturn.png" />
+<image style="position: relative; left: 245rpx; top: 854rpx; width: 252rpx; height: 106rpx; display: inline-block; box-sizing: border-box" src="../images/starfight.png" />
+
+<image mode="aspectFit"  style="position: fixed; left: 175rpx; top: 223rpx; width: 394rpx; height: 318rpx; display: block; box-sizing: border-box" src="../images/moon.png" />
+<image mode="aspectFit"  style="position: fixed; left: -55rpx; top: 959rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 376rpx; top: 1131rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 497rpx; top: 906rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+
+
+
+
+
+
+
+
+
+
+  
+  

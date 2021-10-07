@@ -1,4 +1,4 @@
-// pages/offLine/offLine.js
+// pages/offLine2/offLine2.js
 Page({
 
   /**

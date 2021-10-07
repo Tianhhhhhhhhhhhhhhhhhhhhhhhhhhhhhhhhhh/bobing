@@ -1,4 +1,16 @@
 <!--pages/leaving/leaving.wxml-->
 
-<image style="position: fixed"
-  src="" />
+<image mode="aspectFit"  style="position: fixed; left: 57rpx; top: 343rpx; width: 613rpx; height: 749rpx; display: block; box-sizing: border-box"
+  src="../images/leaving.png" />
+
+<image mode="aspectFit"  style="position: fixed; left: 439rpx; top: 1133rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 35rpx; top: 343rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 513rpx; top: 487rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 57rpx; top: 933rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+
+<image mode="aspectFit"  style="position: fixed; left: 490rpx; top: 89rpx; width: 278rpx; height: 254rpx; display: inline-block; box-sizing: border-box" src="../images/moon.png" />
+
+
+
+
+
