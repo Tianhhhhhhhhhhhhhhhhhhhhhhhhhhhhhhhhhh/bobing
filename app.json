@@ -1,6 +1,9 @@
 {
   "pages":[
-    "pages/begin/begin"
+    "pages/begin/begin",
+    "pages/howTo/howTo",
+    "pages/offLine/offLine",
+    "pages/leaving/leaving"
   ],
   "window":{
     "backgroundTextStyle":"light",
