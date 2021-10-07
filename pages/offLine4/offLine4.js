@@ -13,9 +13,9 @@ Page({
   onLoad: function (options) {
     setTimeout(function () {
       wx.redirectTo({
-        url: '../offLine5/offLine5?value='+options.value,
+        url: '../offLine5/offLine5'
       })
-    }, 3)
+    }, 2000)
   },
 
   /**

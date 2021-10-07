@@ -7,6 +7,16 @@ Page({
     value:[{}],
     dies:[]
   },
+  tapAgain(){
+    wx.redirectTo({
+      url: '../offLine1/offLine1',
+    })
+  },
+  tapStop(){
+    wx.redirectTo({
+      url: '../begin/begin',
+    })
+  },
   onLoad: function (options) {
     console.log(app.globalData.res)
     for (let index = 0; index < app.globalData.res.length; index++) {

@@ -1,0 +1,3 @@
+<!--pages/onlineBegin/onlineBegin.wxml-->
+<text>pages/onlineBegin/onlineBegin.wxml</text>
+<button style="position: relative; left: 0rpx; top: 624rpx" bindtap="go">按钮</button>

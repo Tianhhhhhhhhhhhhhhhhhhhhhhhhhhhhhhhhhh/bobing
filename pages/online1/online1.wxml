@@ -1,0 +1,8 @@
+<!--pages/online1/online1.wxml-->
+
+<button style="position: relative; left: -11rpx; top: 410rpx" bindtap="tapCreate">创建房间</button>
+<button style="position: relative; left: -12rpx; top: 479rpx" bindtap="tapJoin">加入房间</button>
+
+<navigator open-type="navigateBack">
+<image mode="aspectFit"  style="position: fixed; left: 230rpx; top: 1247rpx; width: 299rpx; height: 158rpx; display: inline-block; box-sizing: border-box" src="../images/back.png" />
+</navigator>

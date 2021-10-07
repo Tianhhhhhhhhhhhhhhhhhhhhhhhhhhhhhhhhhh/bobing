@@ -1,32 +1,40 @@
-// pages/begin/begin.js
+// pages/onlineCreate/onlineCreate.js
 Page({
-  tapOnline() {
-wx.navigateTo({
-  url: '../online1/online1',
-})
-  },
-  tapOffLine() {
-    wx.navigateTo({
-      url: '../offLine1/offLine1',
-    })
-  },
-  tapHowTo() {
-    wx.navigateTo({
-      url: '../howTo/howTo',
-    })
-  },
-  tapLeaving() {
-    wx.navigateTo({
-      url: '../leaving/leaving',
-    })
-  },
+
   /**
    * 页面的初始数据
    */
   data: {
-
+    room: 0,
+    num: 0
   },
-
+  keyInputRoom(e) {
+    this.data.room = e.detail.value
+  },
+  keyInputNum(e) {
+    this.data.num = e.detail.value
+  },
+  go() {
+    if (!this.data.room) {
+      wx.showToast({
+        title: '几号房啊你',
+        duration: 1000,
+        mask: true,
+        icon: 'none'
+      })
+    } else if (this.data.num < 2) {
+      wx.showToast({
+        title: '几个人啊你',
+        duration: 1000,
+        mask: true,
+        icon: 'none'
+      })
+    } else {
+      wx.navigateTo({
+        url: '../onlineBegin/onlineBegin',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

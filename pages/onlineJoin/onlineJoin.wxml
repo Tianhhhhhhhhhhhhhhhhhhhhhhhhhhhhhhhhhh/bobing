@@ -1,0 +1,16 @@
+<!--pages/onlineJoin/onlineJoin.wxml-->
+
+<view class="page-section">
+  <view class="weui-cells__title">房号</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input bindinput="keyInputRoom" class="weui-input" maxlength="1" type="number" placeholder="几号房啊你" />
+    </view>
+  </view>
+</view>
+
+<navigator open-type="navigateBack">
+  <image mode="aspectFit"
+    style="position: fixed; left: 230rpx; top: 1247rpx; width: 299rpx; height: 158rpx; display: inline-block; box-sizing: border-box"
+    src="../images/back.png" />
+</navigator>

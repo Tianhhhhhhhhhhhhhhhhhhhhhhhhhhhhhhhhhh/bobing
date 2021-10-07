@@ -34,6 +34,7 @@ Page({
     app.globalData.value = this.data.value
     app.globalData.index = 0
     console.log(app.globalData.value)
+    app.globalData.index=0
     wx.navigateTo({
       url: '../offLine2/offLine2',
     })

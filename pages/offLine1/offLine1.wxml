@@ -5,6 +5,6 @@
   <input class='create' id="{{index}}" placeholder="Name" bindinput='bindKeyInput'></input>
   <text>\n</text>
 </block>
-<button class='add' bindtap='addList'>添加选项</button>
-<button class='add' bindtap='delList'>删除选项</button>
-<button bindtap="tap">确认</button>
+<button class='add' bindtap='addList'>多个人</button>
+<button class='add' bindtap='delList'>少个人</button>
+<button bindtap="tap">就咱几个了</button>

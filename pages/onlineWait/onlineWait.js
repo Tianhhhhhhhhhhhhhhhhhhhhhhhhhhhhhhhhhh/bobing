@@ -1,25 +1,6 @@
-// pages/begin/begin.js
+// pages/onlineWait/onlineWait.js
 Page({
-  tapOnline() {
-wx.navigateTo({
-  url: '../online1/online1',
-})
-  },
-  tapOffLine() {
-    wx.navigateTo({
-      url: '../offLine1/offLine1',
-    })
-  },
-  tapHowTo() {
-    wx.navigateTo({
-      url: '../howTo/howTo',
-    })
-  },
-  tapLeaving() {
-    wx.navigateTo({
-      url: '../leaving/leaving',
-    })
-  },
+
   /**
    * 页面的初始数据
    */

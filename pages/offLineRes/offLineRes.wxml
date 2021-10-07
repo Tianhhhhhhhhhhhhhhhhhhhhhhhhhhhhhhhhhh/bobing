@@ -23,3 +23,7 @@
   src="{{dies[index*6+5]}}" />
   <text></text>
 </block>
+<button style="position: relative; left: 0rpx; top: 100rpx" bindtap="tapAgain">再博</button>
+<button style="position: relative; left: 0rpx; top: 160rpx" bindtap="tapStop">不博</button>
+
+

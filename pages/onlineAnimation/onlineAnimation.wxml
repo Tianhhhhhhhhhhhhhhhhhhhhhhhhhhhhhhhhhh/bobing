@@ -1,0 +1,25 @@
+<!--pages/onlineAnimation/onlineAnimation.wxml-->
+
+<image mode="aspectFit"  style="position: fixed; left: 10rpx; top: 274rpx; width: 729rpx; height: 1048rpx; display: block; box-sizing: border-box" src="../images/bowl.jpg" />
+
+<image mode="aspectFit"  style="position: fixed; left: 236rpx; top: 616rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="../images/movingdie.gif" />
+<image mode="aspectFit"  style="position: fixed; left: 357rpx; top: 616rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="../images/movingdie.gif" />
+<image mode="aspectFit"  style="position: fixed; left: 140rpx; top: 658rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="../images/movingdie.gif" />
+<image mode="aspectFit"  style="position: fixed; left: 357rpx; top: 727rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="../images/movingdie.gif" />
+<image mode="aspectFit"  style="position: fixed; left: 236rpx; top: 727rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="../images/movingdie.gif" />
+<image mode="aspectFit"  style="position: fixed; left: 475rpx; top: 644rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="../images/movingdie.gif" />
+
+
+
+  
+
+
+
+
+

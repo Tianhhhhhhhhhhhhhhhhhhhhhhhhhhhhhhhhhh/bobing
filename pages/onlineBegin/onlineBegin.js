@@ -1,32 +1,13 @@
-// pages/begin/begin.js
+// pages/onlineBegin/onlineBegin.js
 Page({
-  tapOnline() {
-wx.navigateTo({
-  url: '../online1/online1',
-})
-  },
-  tapOffLine() {
-    wx.navigateTo({
-      url: '../offLine1/offLine1',
-    })
-  },
-  tapHowTo() {
-    wx.navigateTo({
-      url: '../howTo/howTo',
-    })
-  },
-  tapLeaving() {
-    wx.navigateTo({
-      url: '../leaving/leaving',
-    })
-  },
+
   /**
    * 页面的初始数据
    */
   data: {
 
   },
-
+  go() {},
   /**
    * 生命周期函数--监听页面加载
    */

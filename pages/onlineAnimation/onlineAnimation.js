@@ -1,25 +1,6 @@
-// pages/begin/begin.js
+// pages/onlineAnimation/onlineAnimation.js
 Page({
-  tapOnline() {
-wx.navigateTo({
-  url: '../online1/online1',
-})
-  },
-  tapOffLine() {
-    wx.navigateTo({
-      url: '../offLine1/offLine1',
-    })
-  },
-  tapHowTo() {
-    wx.navigateTo({
-      url: '../howTo/howTo',
-    })
-  },
-  tapLeaving() {
-    wx.navigateTo({
-      url: '../leaving/leaving',
-    })
-  },
+
   /**
    * 页面的初始数据
    */
@@ -31,7 +12,11 @@ wx.navigateTo({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setTimeout(function () {
+      wx.redirectTo({
+        url: '../onlineDiesAndWait/onlineDiesAndWait'
+      })
+    }, 2000)
   },
 
   /**
