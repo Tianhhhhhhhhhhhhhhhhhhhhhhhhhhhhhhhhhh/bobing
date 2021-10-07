@@ -1,21 +1,33 @@
 <!--pages/offLine5/offLine5.wxml-->
 
-<image mode="aspectFit"  style="position: fixed; left: 274rpx; top: 97rpx; width: 549rpx; height: 365rpx; display: block; box-sizing: border-box"
+<image mode="aspectFit"
+  style="position: fixed; left: 274rpx; top: 97rpx; width: 549rpx; height: 365rpx; display: block; box-sizing: border-box"
   src="../images/moon.png" />
 
-  <image mode="aspectFit"  style="position: fixed; left: 482rpx; top: 933rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
-<image mode="aspectFit"  style="position: fixed; left: -40rpx; top: 461rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
-<image mode="aspectFit"  style="position: fixed; left: 323rpx; top: 586rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
-<image mode="aspectFit"  style="position: fixed; left: 227rpx; top: 828rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
-<image mode="aspectFit"  style="position: fixed; left: 419rpx; top: 828rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
+<image mode="aspectFit"
+  style="position: fixed; left: 482rpx; top: 933rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box"
+  src="../images/mooncake.png" />
+<image mode="aspectFit"
+  style="position: fixed; left: -40rpx; top: 461rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box"
+  src="../images/mooncake.png" />
 
 
-<image mode="aspectFit"  style="position: fixed; left: 178rpx; top: 669rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
-<image mode="aspectFit"  style="position: fixed; left: 323rpx; top: 711rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
-<image mode="aspectFit"  style="position: fixed; left: 452rpx; top: 669rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
-
-
-
-
-
-
+<image mode="aspectFit"
+  style="position: fixed; left: 323rpx; top: 586rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="{{nums[0]}}" />
+<image mode="aspectFit"
+  style="position: fixed; left: 227rpx; top: 828rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="{{nums[1]}}" />
+<image mode="aspectFit"
+  style="position: fixed; left: 419rpx; top: 828rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="{{nums[2]}}" />
+<image mode="aspectFit"
+  style="position: fixed; left: 178rpx; top: 669rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="{{nums[3]}}" />
+<image mode="aspectFit"
+  style="position: fixed; left: 323rpx; top: 711rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="{{nums[4]}}" />
+<image mode="aspectFit"
+  style="position: fixed; left: 452rpx; top: 669rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+  src="{{nums[5]}}" />
+<button style="position: relative; left: -5rpx; top: 1207rpx" bindtap="tapNext">按钮</button>

@@ -5,20 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    value:[]
+    value: []
   },
-tapBegin(){
-  console.log(this.data.value)
-  wx.navigateTo({
-    url: '../offLine3/offLine3?value='+this.data.value,
-  })
-},
+  tapBegin() {
+
+    wx.redirectTo({
+      url: '../offLine3/offLine3',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.data.value=options.value.split(","),
-    console.log(this.data.value)
+
   },
 
   /**

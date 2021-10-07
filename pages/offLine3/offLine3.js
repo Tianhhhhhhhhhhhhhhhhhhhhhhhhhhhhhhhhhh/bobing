@@ -1,20 +1,27 @@
 // pages/offLine3/offLine3.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value: "1"
+    name: "",
+    value: [],
+    dies: {},
+    res: [],
+    index: 0
   },
-
+  tapBeginGame() {
+    wx.redirectTo({
+      url: '../offLine4/offLine4',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.value)
-    this.data.value = options.value.split(","),
-      console.log(this.data.value)
+
   },
 
   /**
@@ -28,7 +35,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      name: app.globalData.value[app.globalData.index]
+    })
   },
 
   /**

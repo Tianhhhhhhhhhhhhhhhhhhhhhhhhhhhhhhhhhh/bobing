@@ -7,7 +7,8 @@
     "pages/leaving/leaving",
     "pages/offLine3/offLine3",
     "pages/offLine4/offLine4",
-    "pages/offLine5/offLine5"
+    "pages/offLine5/offLine5",
+    "pages/offLineRes/offLineRes"
   ],
   "window":{
     "backgroundTextStyle":"light",

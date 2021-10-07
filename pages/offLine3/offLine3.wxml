@@ -2,12 +2,13 @@
 
 <image mode="aspectFit"  style="position: fixed; left: 125rpx; top: 540rpx; width: 493rpx; height: 174rpx; display: block; box-sizing: border-box"
   src="../images/yourturn.png" />
-<image style="position: relative; left: 245rpx; top: 854rpx; width: 252rpx; height: 106rpx; display: inline-block; box-sizing: border-box" src="../images/starfight.png" />
+<image bindtap="tapBeginGame"  style="position: relative; left: 245rpx; top: 854rpx; width: 252rpx; height: 106rpx; display: inline-block; box-sizing: border-box" src="../images/starfight.png" />
 
-<image mode="aspectFit"  style="position: fixed; left: 175rpx; top: 223rpx; width: 394rpx; height: 318rpx; display: block; box-sizing: border-box" src="../images/moon.png" />
+<image mode="aspectFit"  style="position: fixed; left: 174rpx; top: 184rpx; width: 394rpx; height: 318rpx; display: block; box-sizing: border-box" src="../images/moon.png" />
 <image mode="aspectFit"  style="position: fixed; left: -55rpx; top: 959rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
 <image mode="aspectFit"  style="position: fixed; left: 376rpx; top: 1131rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
 <image mode="aspectFit"  style="position: fixed; left: 497rpx; top: 906rpx; width: 341rpx; height: 250rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<text style="position: relative; left: -78rpx; top: 420rpx; font-size: xx-large">{{name}}</text>
 
 
 
