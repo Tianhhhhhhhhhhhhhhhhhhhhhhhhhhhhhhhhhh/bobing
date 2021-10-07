@@ -2,6 +2,7 @@
   "pages":[
     "pages/begin/begin",
     "pages/howTo/howTo",
+    "pages/offLine1/offLine1",
     "pages/offLine2/offLine2",
     "pages/leaving/leaving",
     "pages/offLine3/offLine3",

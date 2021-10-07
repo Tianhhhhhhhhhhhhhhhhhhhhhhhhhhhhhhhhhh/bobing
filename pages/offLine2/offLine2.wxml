@@ -2,8 +2,11 @@
 
 
 <image mode="aspectFit"  style="position: fixed; left: 87rpx; top: 381rpx; width: 569rpx; height: 372rpx; display: block; box-sizing: border-box" src="../images/pic_daye1.png" />
-<image mode="aspectFit"  style="position: fixed; left: 245rpx; top: 854rpx; width: 252rpx; height: 106rpx; display: block; box-sizing: border-box" src="../images/starfight.png" />
+
+<image bindtap="tapBegin"  mode="aspectFit"  style="position: fixed; left: 245rpx; top: 854rpx; width: 252rpx; height: 106rpx; display: block; box-sizing: border-box" src="../images/starfight.png" />
+<navigator open-type="navigateBack">
 <image mode="aspectFit"  style="position: relative; width: 395rpx; height: 127rpx; display: inline-block; box-sizing: border-box; left: 410rpx; top: 1164rpx" src="../images/back.png" />
+</navigator>
 <image mode="aspectFit"  style="position: fixed; left: 219rpx; top: 173rpx; width: 305rpx; height: 127rpx; display: block; box-sizing: border-box" src="../images/ready.png" />
 
 

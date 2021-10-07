@@ -4,8 +4,9 @@
   src="../images/title2.png" />
 
 <image mode="aspectFit"  style="position: fixed; left: -99rpx; top: 245rpx; width: 953rpx; height: 982rpx; display: block; box-sizing: border-box" src="../images/rule.png" />
+<navigator open-type="navigateBack">
 <image mode="aspectFit"  style="position: relative; left: 230rpx; top: 1247rpx; width: 299rpx; height: 158rpx; display: inline-block; box-sizing: border-box" src="../images/back.png" />
-
+</navigator>
 
 
 

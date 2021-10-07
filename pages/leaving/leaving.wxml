@@ -1,16 +1,26 @@
 <!--pages/leaving/leaving.wxml-->
+<navigator target="miniProgram" open-type="exit" style="width: 750rpx; height: 1477rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+  <view style="position:relative; width: 100%; background: #ffffff; min-height: 100px">
+    <image mode="aspectFit"
+      style="position: fixed; left: 57rpx; top: 343rpx; width: 613rpx; height: 749rpx; display: block; box-sizing: border-box"
+      src="../images/leaving.png" />
 
-<image mode="aspectFit"  style="position: fixed; left: 57rpx; top: 343rpx; width: 613rpx; height: 749rpx; display: block; box-sizing: border-box"
-  src="../images/leaving.png" />
+    <image mode="aspectFit"
+      style="position: fixed; left: 439rpx; top: 1133rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box"
+      src="../images/mooncake.png" />
+    <image mode="aspectFit"
+      style="position: fixed; left: 35rpx; top: 343rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box"
+      src="../images/mooncake.png" />
+    <image mode="aspectFit"
+      style="position: fixed; left: 513rpx; top: 487rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box"
+      src="../images/mooncake.png" />
+    <image mode="aspectFit"
+      style="position: fixed; left: 57rpx; top: 933rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box"
+      src="../images/mooncake.png" />
 
-<image mode="aspectFit"  style="position: fixed; left: 439rpx; top: 1133rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
-<image mode="aspectFit"  style="position: fixed; left: 35rpx; top: 343rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
-<image mode="aspectFit"  style="position: fixed; left: 513rpx; top: 487rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
-<image mode="aspectFit"  style="position: fixed; left: 57rpx; top: 933rpx; width: 278rpx; height: 231rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+    <image mode="aspectFit"
+      style="position: fixed; left: 490rpx; top: 89rpx; width: 278rpx; height: 254rpx; display: inline-block; box-sizing: border-box"
+      src="../images/moon.png" />
+  </view>
 
-<image mode="aspectFit"  style="position: fixed; left: 490rpx; top: 89rpx; width: 278rpx; height: 254rpx; display: inline-block; box-sizing: border-box" src="../images/moon.png" />
-
-
-
-
-
+</navigator>

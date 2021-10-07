@@ -1,0 +1,10 @@
+<!--pages/offLine1/offLine1.wxml-->
+
+<block wx:for="{{lists}}" wx:key="{{index}}">
+  <text>Player {{index + 1}}</text>
+  <input class='create' id="{{index}}" placeholder="Name" bindinput='bindKeyInput'></input>
+  <text>\n</text>
+</block>
+<button class='add' bindtap='addList'>添加选项</button>
+<button class='add' bindtap='delList'>删除选项</button>
+<button bindtap="tap">确认</button>

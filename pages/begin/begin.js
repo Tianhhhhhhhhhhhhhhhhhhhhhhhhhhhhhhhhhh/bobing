@@ -1,5 +1,10 @@
 // pages/begin/begin.js
 Page({
+  tapOffLine(){
+    wx.navigateTo({
+      url: '../offLine1/offLine1',
+    })
+  },
 tapHowTo(){
   wx.navigateTo({
     url: '../howTo/howTo',

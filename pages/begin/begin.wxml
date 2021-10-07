@@ -14,10 +14,10 @@
 <image mode="aspectFit"  style="position: fixed; left: 187rpx; top: 276rpx; width: 366rpx; height: 352rpx; display: block; box-sizing: border-box" src="../images/littlehorse.jpg" />
 <image mode="aspectFit"  style="position: fixed; left: 187rpx; top: 276rpx; width: 366rpx; height: 352rpx; display: block; box-sizing: border-box" src="../images/littlehorse.jpg" />
 
-<image style="position: fixed; left: 266rpx; top: 763rpx; width: 209rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/online.png" />
-<image bindtap="tapHowTo"  style="position: fixed; left: 265rpx; top: 1010rpx; width: 207rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/howbo.png" />
-<image bindtap="tapLeaving"  style="position: fixed; left: 265rpx; top: 1154rpx; width: 207rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/nobo.png" />
-<image style="position: fixed; left: 265rpx; top: 886rpx; width: 207rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/lixianbo.png" />
+<image mode="aspectFit"  style="position: fixed; left: 266rpx; top: 763rpx; width: 209rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/online.png" />
+<image mode="aspectFit"  bindtap="tapHowTo"  style="position: fixed; left: 265rpx; top: 1010rpx; width: 207rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/howbo.png" />
+<image mode="aspectFit"  bindtap="tapLeaving"  style="position: fixed; left: 265rpx; top: 1135rpx; width: 207rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/nobo.png" />
+<image bindtap="tapOffLine"  mode="aspectFit"  style="position: fixed; left: 265rpx; top: 886rpx; width: 207rpx; height: 77rpx; display: block; box-sizing: border-box" src="../images/lixianbo.png" />
 <image mode="aspectFit"  style="position: fixed; left: 185rpx; top: 84rpx; width: 366rpx; height: 138rpx; display: block; box-sizing: border-box" src="../images/title.png" />
 
 
