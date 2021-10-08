@@ -14,12 +14,19 @@ Page({
   onLoad: function (options) {
     this.data.room = options.value
     const db = wx.cloud.database()
+    db.collection('again').where({
+      room: getApp().globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
     const watcher = db.collection('playing').where({
       room: this.data.room
     }).watch({
       onChange: function (snapshot) {
         console.log('snapshot', snapshot)
-        if (snapshot.docChanges.length == 1) {
+        if (snapshot.docs.length == 1) {
           const rooms = db.collection('rooms')
           rooms.where({ room: getApp().globalData.room }).get({
             success: function (res) {

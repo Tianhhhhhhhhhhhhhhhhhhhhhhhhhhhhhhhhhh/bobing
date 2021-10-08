@@ -1,9 +1,9 @@
 // pages/begin/begin.js
 Page({
   tapOnline() {
-wx.navigateTo({
-  url: '../online1/online1',
-})
+    wx.navigateTo({
+      url: '../online1/online1',
+    })
   },
   tapOffLine() {
     wx.navigateTo({
@@ -31,7 +31,13 @@ wx.navigateTo({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    db.collection('again').where({}).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
   },
 
   /**

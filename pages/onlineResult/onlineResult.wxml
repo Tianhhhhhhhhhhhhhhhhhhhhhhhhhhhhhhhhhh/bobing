@@ -23,5 +23,7 @@
     src="{{dies[index*6+5]}}" />
   <text></text>
 </block>
-<button style="position: relative; left: 0rpx; top: -231rpx" bindtap="tapAgain">再博</button>
+<!-- <view wx:if="{{owner}}">
+  <button style="position: relative; left: 0rpx; top: -231rpx" bindtap="tapAgain">再博</button>
+</view> -->
 <button style="position: relative; left: 0rpx; top: -194rpx" bindtap="tapStop">不博</button>

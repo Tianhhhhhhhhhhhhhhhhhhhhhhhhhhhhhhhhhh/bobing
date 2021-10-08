@@ -11,7 +11,89 @@ Page({
     value: [{}],
     dies: []
   },
+  play() {
+    const db = wx.cloud.database()
+    const watcher = db.collection('again').where({
+      room: this.data.room
+    }).watch({
+      onChange: function (snapshot) {
+        console.log('snapshot', snapshot)
+        for (let index = 0; index < snapshot.docs.length; index++) {
+          if (snapshot.docs[index].again) {
+            wx.redirectTo({
+              url: '../onlineWait/onlineWait',
+            })
+          }
+
+        }
+      },
+      onError: function (err) {
+        console.error('the watch closed because of error', err)
+      }
+    })
+  },
+  tapAgain() {
+    const db = wx.cloud.database()
+    db.collection('again').add({
+      data: {
+        room: app.globalData.room,
+        play: true
+      }
+    })
+    db.collection('rooms').where({
+      room: app.globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
+    db.collection('playing').where({
+      room: app.globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
+    db.collection('results').where({
+      room: app.globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
+    wx.redirectTo({
+      url: '../onlineBegin/onlineBegin',
+    })
+  },
   tapStop() {
+    const db = wx.cloud.database()
+    db.collection('rooms').where({
+      room: app.globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
+    db.collection('playing').where({
+      room: app.globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
+    db.collection('results').where({
+      room: app.globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
+    db.collection('again').add({
+      data: {
+        room: app.globalData.room,
+        play: false
+      }
+    })
     wx.redirectTo({
       url: '../begin/begin',
     })
@@ -20,6 +102,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.play()
+    this.setData({
+      owner: app.globalData.owner
+    })
     var temp = []
     var tempValue = []
     for (let index = 0; index < app.globalData.onlineRes.length; index++) {

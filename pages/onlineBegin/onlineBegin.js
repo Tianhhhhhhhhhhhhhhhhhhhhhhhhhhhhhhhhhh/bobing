@@ -12,7 +12,9 @@ Page({
     const db = wx.cloud.database()
     const playing = db.collection('playing')
     const rooms = db.collection('rooms')
-    rooms.where({ room: this.data.room }).get({
+    rooms.where({
+      room: this.data.room
+    }).get({
       success: function (res) {
         getApp().globalData.number = res.data.length
         console.log(getApp().globalData.number)
@@ -34,7 +36,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const db = wx.cloud.database()
+    db.collection('again').where({
+      room: getApp().globalData.room
+    }).remove({
+      success: function (res) {
+        console.log(res.data)
+      }
+    });
     this.data.room = options.value
+    getApp().globalData.owner = true
   },
 
   /**

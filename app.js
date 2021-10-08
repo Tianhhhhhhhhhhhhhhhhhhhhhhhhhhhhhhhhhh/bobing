@@ -5,10 +5,11 @@ App({
     dies: [],
     res: [],
     index: 0,
-    room:0,
-    name:"",
-    number:0,
-    onlineRes:[]
+    room: 0,
+    name: "",
+    number: 0,
+    onlineRes: [],
+    owner: false
   },
   onLaunch() {
     // 展示本地存储能力
