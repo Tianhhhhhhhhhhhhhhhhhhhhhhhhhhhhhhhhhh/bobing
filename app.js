@@ -4,7 +4,11 @@ App({
     value: [],
     dies: [],
     res: [],
-    index: 0
+    index: 0,
+    room:0,
+    name:"",
+    number:0,
+    onlineRes:[]
   },
   onLaunch() {
     // 展示本地存储能力

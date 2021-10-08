@@ -1,6 +1,6 @@
 // pages/onlineJoin/onlineJoin.js
 var result = {};
-
+const app = getApp()
 Page({
 
   /**
@@ -80,6 +80,8 @@ Page({
             console.log(res)
           }
         })
+        app.globalData.room = this.data.room
+        app.globalData.name = this.data.name
         wx.redirectTo({
           url: '../onlineWait/onlineWait?value=' + this.data.room,
         })

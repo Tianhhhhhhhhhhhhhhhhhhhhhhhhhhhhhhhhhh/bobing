@@ -1,2 +1,27 @@
 <!--pages/onlineResult/onlineResult.wxml-->
-<text>pages/onlineResult/onlineResult.wxml</text>
+
+<view>winner: {{name}}\n\n</view>
+<block wx:for="{{value}}" wx:key="{{index}}">
+  <text>{{value[index]}}</text>
+  <image mode="aspectFit"
+    style="position: relative; left: 0rpx; top: 31rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+    src="{{dies[index*6+0]}}" />
+  <image mode="aspectFit"
+    style="position: relative; left: 111rpx; top: -53rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+    src="{{dies[index*6+1]}}" />
+  <image mode="aspectFit"
+    style="position: relative; left: 207rpx; top: -136rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+    src="{{dies[index*6+2]}}" />
+  <image mode="aspectFit"
+    style="position: relative; left: 327rpx; top: -220rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+    src="{{dies[index*6+3]}}" />
+  <image mode="aspectFit"
+    style="position: relative; left: 446rpx; top: -303rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+    src="{{dies[index*6+4]}}" />
+  <image mode="aspectFit"
+    style="position: relative; left: 542rpx; top: -386rpx; width: 97rpx; height: 84rpx; display: block; box-sizing: border-box"
+    src="{{dies[index*6+5]}}" />
+  <text></text>
+</block>
+<button style="position: relative; left: 0rpx; top: -231rpx" bindtap="tapAgain">再博</button>
+<button style="position: relative; left: 0rpx; top: -194rpx" bindtap="tapStop">不博</button>

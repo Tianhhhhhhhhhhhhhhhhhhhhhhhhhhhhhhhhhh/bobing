@@ -10,14 +10,24 @@ Page({
   go() {
     console.log(this.data.room)
     const db = wx.cloud.database()
-    const rooms = db.collection('playing')
-    rooms.add({
+    const playing = db.collection('playing')
+    const rooms = db.collection('rooms')
+    rooms.where({ room: this.data.room }).get({
+      success: function (res) {
+        getApp().globalData.number = res.data.length
+        console.log(getApp().globalData.number)
+      }
+    })
+    playing.add({
       data: {
         room: this.data.room
       },
       success: function (res) {
         console.log(res)
       }
+    })
+    wx.redirectTo({
+      url: '../onlinePlay/onlinePlay',
     })
   },
   /**

@@ -1,4 +1,5 @@
 // pages/onlineAnimation/onlineAnimation.js
+const app = getApp()
 Page({
 
   /**
@@ -12,11 +13,37 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(function () {
-      wx.redirectTo({
-        url: '../onlineDiesAndWait/onlineDiesAndWait'
-      })
-    }, 2000)
+    console.log(app.globalData.name)
+    var dies = app.getDies()
+    const db = wx.cloud.database()
+    const res = db.collection('results')
+    res.add({
+      data: {
+        room: app.globalData.room,
+        name: app.globalData.name,
+        dies: dies
+      },
+      success: function (res) {
+        console.log(res)
+      }
+    })
+    const watcher = res.where({
+      room: app.globalData.room
+    }).watch({
+      onChange: function (snapshot) {
+        console.log('snapshot', snapshot)
+        app.globalData.onlineRes = snapshot.docs
+        if (app.globalData.onlineRes.length == app.globalData.number) {
+          console.log(app.globalData.onlineRes)
+          wx.redirectTo({
+            url: '../onlineResult/onlineResult',
+          })
+        }
+      },
+      onError: function (err) {
+        console.error('the watch closed because of error', err)
+      }
+    })
   },
 
   /**

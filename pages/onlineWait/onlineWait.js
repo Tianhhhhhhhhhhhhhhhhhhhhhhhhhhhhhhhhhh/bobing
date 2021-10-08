@@ -15,10 +15,22 @@ Page({
     this.data.room = options.value
     const db = wx.cloud.database()
     const watcher = db.collection('playing').where({
-      room:this.data.room
+      room: this.data.room
     }).watch({
       onChange: function (snapshot) {
         console.log('snapshot', snapshot)
+        if (snapshot.docChanges.length == 1) {
+          const rooms = db.collection('rooms')
+          rooms.where({ room: getApp().globalData.room }).get({
+            success: function (res) {
+              getApp().globalData.number = res.data.length
+              console.log(getApp().globalData.number)
+            }
+          })
+          wx.redirectTo({
+            url: '../onlinePlay/onlinePlay',
+          })
+        }
       },
       onError: function (err) {
         console.error('the watch closed because of error', err)

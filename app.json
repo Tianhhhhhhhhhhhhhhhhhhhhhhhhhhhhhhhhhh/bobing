@@ -16,7 +16,6 @@
     "pages/onlineBegin/onlineBegin",
     "pages/onlineWait/onlineWait",
     "pages/onlineAnimation/onlineAnimation",
-    "pages/onlineDiesAndWait/onlineDiesAndWait",
     "pages/onlineResult/onlineResult"
   ],
   "window":{

@@ -1,4 +1,5 @@
 // pages/onlineCreate/onlineCreate.js
+const app = getApp()
 var result = {};
 Page({
 
@@ -80,8 +81,10 @@ Page({
             console.log(res)
           }
         })
+        app.globalData.room = this.data.room
+        app.globalData.name = this.data.name
         wx.redirectTo({
-          url: '../onlineBegin/onlineBegin?value='+this.data.room,
+          url: '../onlineBegin/onlineBegin?value=' + this.data.room,
         })
       } else {
         wx.showToast({
