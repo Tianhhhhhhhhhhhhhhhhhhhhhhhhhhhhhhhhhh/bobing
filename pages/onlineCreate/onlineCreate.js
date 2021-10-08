@@ -78,10 +78,10 @@ Page({
           },
           success: function (res) {
             console.log(res)
-            wx.redirectTo({
-              url: '../onlineBegin/onlineBegin',
-            })
           }
+        })
+        wx.redirectTo({
+          url: '../onlineBegin/onlineBegin?value='+this.data.room,
         })
       } else {
         wx.showToast({

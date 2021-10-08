@@ -5,14 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    room: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.data.room = options.value
+    const db = wx.cloud.database()
+    const watcher = db.collection('playing').where({
+      room:this.data.room
+    }).watch({
+      onChange: function (snapshot) {
+        console.log('snapshot', snapshot)
+      },
+      onError: function (err) {
+        console.error('the watch closed because of error', err)
+      }
+    })
   },
 
   /**

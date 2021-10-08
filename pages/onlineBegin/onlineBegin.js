@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    room: 0
   },
-  go() {},
+  go() {
+    console.log(this.data.room)
+    const db = wx.cloud.database()
+    const rooms = db.collection('playing')
+    rooms.add({
+      data: {
+        room: this.data.room
+      },
+      success: function (res) {
+        console.log(res)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.data.room = options.value
   },
 
   /**

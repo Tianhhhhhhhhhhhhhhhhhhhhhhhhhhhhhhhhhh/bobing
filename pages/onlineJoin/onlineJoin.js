@@ -78,10 +78,10 @@ Page({
           },
           success: function (res) {
             console.log(res)
-            wx.redirectTo({
-              url: '../onlineWait/onlineWait',
-            })
           }
+        })
+        wx.redirectTo({
+          url: '../onlineWait/onlineWait?value=' + this.data.room,
         })
       }
     } else {
