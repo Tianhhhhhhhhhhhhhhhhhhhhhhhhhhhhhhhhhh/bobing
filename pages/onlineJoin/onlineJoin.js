@@ -5,9 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+room:0,
+name:""
   },
 
+  keyInputRoom(e) {
+    this.data.room = e.detail.value
+  },
+  keyInputName(e) {
+    this.data.name = e.detail.value
+  },
+  go() {
+    wx.navigateTo({
+      url: '../onlineWait/onlineWait',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

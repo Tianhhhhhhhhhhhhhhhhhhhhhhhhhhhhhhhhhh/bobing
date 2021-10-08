@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/onlinePlay/onlinePlay",
     "pages/begin/begin",
     "pages/howTo/howTo",
     "pages/leaving/leaving",
@@ -11,6 +10,7 @@
     "pages/offLine5/offLine5",
     "pages/offLineRes/offLineRes",
     "pages/online1/online1",
+    "pages/onlinePlay/onlinePlay",
     "pages/onlineCreate/onlineCreate",
     "pages/onlineJoin/onlineJoin",
     "pages/onlineBegin/onlineBegin",

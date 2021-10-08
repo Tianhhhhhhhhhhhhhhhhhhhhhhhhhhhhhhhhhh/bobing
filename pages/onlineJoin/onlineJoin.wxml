@@ -9,6 +9,17 @@
   </view>
 </view>
 
+<view class="page-section">
+  <view class="weui-cells__title">你叫啥</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input bindinput="keyInputName" class="weui-input" maxlength="3" placeholder="叫啥啊你啊" />
+    </view>
+  </view>
+</view>
+
+<button style="position: relative; left: 0rpx; top: 624rpx" bindtap="go">go</button>
+
 <navigator open-type="navigateBack">
   <image mode="aspectFit"
     style="position: fixed; left: 230rpx; top: 1247rpx; width: 299rpx; height: 158rpx; display: inline-block; box-sizing: border-box"

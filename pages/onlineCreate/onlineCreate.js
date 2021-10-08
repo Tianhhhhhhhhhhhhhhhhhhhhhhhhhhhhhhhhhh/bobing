@@ -6,7 +6,8 @@ Page({
    */
   data: {
     room: 0,
-    num: 0
+    num: 0,
+    name: ""
   },
   keyInputRoom(e) {
     this.data.room = e.detail.value
@@ -14,6 +15,10 @@ Page({
   keyInputNum(e) {
     this.data.num = e.detail.value
   },
+  keyInputName(e) {
+    this.data.name = e.detail.value
+  },
+
   go() {
     if (!this.data.room) {
       wx.showToast({
@@ -25,6 +30,13 @@ Page({
     } else if (this.data.num < 2) {
       wx.showToast({
         title: '几个人啊你',
+        duration: 1000,
+        mask: true,
+        icon: 'none'
+      })
+    } else if (!this.data.name) {
+      wx.showToast({
+        title: '叫啥啊你啊',
         duration: 1000,
         mask: true,
         icon: 'none'
