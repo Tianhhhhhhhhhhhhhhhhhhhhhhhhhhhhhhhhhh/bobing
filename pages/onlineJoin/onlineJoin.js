@@ -1,24 +1,97 @@
 // pages/onlineJoin/onlineJoin.js
+var result = {};
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-room:0,
-name:""
+    room: 0,
+    name: ""
   },
-
   keyInputRoom(e) {
-    this.data.room = e.detail.value
+    this.setData({
+      room: e.detail.value
+    })
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    const rooms = db.collection('rooms')
+    console.log(this.data.room)
+    rooms.where({
+      room: this.data.room
+    }).get({
+      success: function (res) {
+        result = res
+      }
+    })
+    console.log(result)
   },
   keyInputName(e) {
     this.data.name = e.detail.value
   },
   go() {
-    wx.navigateTo({
-      url: '../onlineWait/onlineWait',
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    const rooms = db.collection('rooms')
+    console.log(this.data.room)
+    rooms.where({
+      room: this.data.room
+    }).get({
+      success: function (res) {
+        result = res
+      }
     })
+    console.log(result)
+    var repeat = false
+    var exit = false
+    var full = false
+    if (result.data.length != 0) {
+      for (let index = 0; index < result.data.length; index++) {
+        if (result.data[index].name == this.data.name) {
+          wx.showToast({
+            title: '这名儿不行',
+            duration: 1000,
+            mask: true,
+            icon: 'none'
+          })
+          repeat = true
+        }
+      }
+      console.log(parseInt(result.data[0].num))
+      console.log(result.data.length)
+      if (parseInt(result.data[0].num) == result.data.length) {
+        full = true
+        wx.showToast({
+          title: '这房儿满了',
+          duration: 1000,
+          mask: true,
+          icon: 'none'
+        })
+      }
+      if (!repeat && !full) {
+        rooms.add({
+          data: {
+            room: this.data.room,
+            name: this.data.name,
+            num: result.data[0].num
+          },
+          success: function (res) {
+            console.log(res)
+            wx.redirectTo({
+              url: '../onlineWait/onlineWait',
+            })
+          }
+        })
+      }
+    } else {
+      wx.showToast({
+        title: '这房儿不行',
+        duration: 1000,
+        mask: true,
+        icon: 'none'
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

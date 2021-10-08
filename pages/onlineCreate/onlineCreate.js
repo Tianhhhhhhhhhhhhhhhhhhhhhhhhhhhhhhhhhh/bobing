@@ -1,4 +1,5 @@
 // pages/onlineCreate/onlineCreate.js
+var result = {};
 Page({
 
   /**
@@ -10,7 +11,21 @@ Page({
     name: ""
   },
   keyInputRoom(e) {
-    this.data.room = e.detail.value
+    this.setData({
+      room: e.detail.value
+    })
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    const rooms = db.collection('rooms')
+    console.log(this.data.room)
+    rooms.where({
+      room: this.data.room
+    }).get({
+      success: function (res) {
+        result = res
+      }
+    })
+    console.log(result)
   },
   keyInputNum(e) {
     this.data.num = e.detail.value
@@ -42,11 +57,43 @@ Page({
         icon: 'none'
       })
     } else {
-      wx.navigateTo({
-        url: '../onlineBegin/onlineBegin',
+      wx.cloud.init()
+      const db = wx.cloud.database()
+      const rooms = db.collection('rooms')
+      console.log(this.data.room)
+      rooms.where({
+        room: this.data.room
+      }).get({
+        success: function (res) {
+          result = res
+        }
       })
+      console.log(result)
+      if (!result.data.length) {
+        rooms.add({
+          data: {
+            room: this.data.room,
+            name: this.data.name,
+            num: this.data.num
+          },
+          success: function (res) {
+            console.log(res)
+            wx.redirectTo({
+              url: '../onlineBegin/onlineBegin',
+            })
+          }
+        })
+      } else {
+        wx.showToast({
+          title: '房间有人了',
+          duration: 1000,
+          mask: true,
+          icon: 'none'
+        })
+      }
     }
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
