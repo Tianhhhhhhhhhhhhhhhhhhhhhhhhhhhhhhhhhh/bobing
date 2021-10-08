@@ -25,3 +25,10 @@
 </block>
 <button style="position: relative; left: 0rpx; top: -231rpx" bindtap="tapAgain">再博</button>
 <button style="position: relative; left: 0rpx; top: -194rpx" bindtap="tapStop">不博</button>
+<image mode="aspectFit"  style="position: fixed; left: 475rpx; top: -20rpx; width: 276rpx; height: 256rpx; display: block; box-sizing: border-box" src="../images/moon.png" />
+<image mode="aspectFit"  style="position: relative; left: -40rpx; top: -194rpx; width: 366rpx; height: 256rpx; display: inline-block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: relative; left: 176rpx; top: -339rpx; width: 366rpx; height: 256rpx; display: inline-block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: relative; left: 359rpx; top: -386rpx; width: 366rpx; height: 256rpx; display: inline-block; box-sizing: border-box" src="../images/mooncake.png" />
+
+
+

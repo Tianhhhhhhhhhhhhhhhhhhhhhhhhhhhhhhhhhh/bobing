@@ -1,2 +1,5 @@
 <!--pages/onlineWait/onlineWait.wxml-->
-<text>pages/onlineWait/onlineWait.wxml</text>
+
+<image mode="aspectFit"  style="position: relative; left: 68rpx; top: 377rpx; width: 618rpx; height: 609rpx; display: inline-block; box-sizing: border-box"
+  src="../images/waiting2.jpeg" />
+

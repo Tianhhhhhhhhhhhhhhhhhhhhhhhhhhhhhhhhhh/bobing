@@ -8,3 +8,15 @@
 <button class='add' bindtap='addList'>多个人</button>
 <button class='add' bindtap='delList'>少个人</button>
 <button bindtap="tap">就咱几个了</button>
+<image mode="aspectFit"  style="position: relative; left: 0rpx; top: 327rpx; width: 301rpx; height: 241rpx; display: inline-block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: relative; left: 236rpx; top: 0rpx; width: 301rpx; height: 241rpx; display: inline-block; box-sizing: border-box" src="../images/mooncake.png" />
+
+<image mode="aspectFit"  style="position: relative; left: 55rpx; top: -198rpx; width: 301rpx; height: 241rpx; display: inline-block; box-sizing: border-box" src="../images/mooncake.png" />
+
+
+
+<image mode="aspectFit"  style="position: fixed; left: 538rpx; top: -19rpx; width: 241rpx; height: 214rpx; display: block; box-sizing: border-box" src="../images/moon.png" />
+
+
+
+

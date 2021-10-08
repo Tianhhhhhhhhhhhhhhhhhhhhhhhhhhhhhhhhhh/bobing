@@ -25,3 +25,6 @@
     style="position: fixed; left: 230rpx; top: 1247rpx; width: 299rpx; height: 158rpx; display: inline-block; box-sizing: border-box"
     src="../images/back.png" />
 </navigator>
+<image mode="aspectFit"  style="position: relative; left: 26rpx; top: 412rpx; width: 142rpx; height: 80rpx; display: inline-block; box-sizing: border-box" src="../images/die4.png" />
+<image mode="aspectFit"  style="position: relative; width: 116rpx; height: 102rpx; display: inline-block; box-sizing: border-box; left: 455rpx; top: 667rpx" src="../images/die6.png" />
+<image mode="aspectFit"  style="position: fixed; left: 522rpx; top: -22rpx; width: 265rpx; height: 258rpx; display: block; box-sizing: border-box" src="../images/moon.png" />

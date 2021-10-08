@@ -1,1 +1,4 @@
 /* pages/onlineWait/onlineWait.wxss */
+page{
+  background-color: #fff1ce;
+}

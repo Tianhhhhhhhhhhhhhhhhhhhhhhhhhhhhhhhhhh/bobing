@@ -1,3 +1,7 @@
 <!--pages/onlineBegin/onlineBegin.wxml-->
-<text>pages/onlineBegin/onlineBegin.wxml</text>
-<button style="position: relative; left: 0rpx; top: 624rpx" bindtap="go">按钮</button>
+
+<button style="position: relative; left: 10rpx; top: 801rpx" bindtap="go">开博！！！</button>
+<image mode="aspectFit"  style="position: fixed; left: 141rpx; top: 287rpx; width: 488rpx; height: 424rpx; display: block; box-sizing: border-box" src="../images/pic_daye1.png" />
+<image mode="aspectFit"  style="position: fixed; width: 252rpx; height: 250rpx; display: block; box-sizing: border-box; left: 500rpx; top: 15rpx" src="../images/moon.png" />
+
+

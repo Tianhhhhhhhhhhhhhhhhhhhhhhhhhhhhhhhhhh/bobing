@@ -6,3 +6,21 @@
 <navigator open-type="navigateBack">
 <image mode="aspectFit"  style="position: fixed; left: 230rpx; top: 1247rpx; width: 299rpx; height: 158rpx; display: inline-block; box-sizing: border-box" src="../images/back.png" />
 </navigator>
+<image mode="aspectFit"  style="position: fixed; left: -40rpx; top: 145rpx; width: 299rpx; height: 263rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 497rpx; top: 683rpx; width: 334rpx; height: 263rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 0rpx; top: 859rpx; width: 299rpx; height: 263rpx; display: block; box-sizing: border-box" src="../images/mooncake.png" />
+<image mode="aspectFit"  style="position: fixed; left: 500rpx; top: 43rpx; width: 250rpx; height: 205rpx; display: block; box-sizing: border-box" src="../images/moon.png" />
+<image mode="aspectFit"  style="position: fixed; left: 165rpx; top: 89rpx; width: 366rpx; height: 283rpx; display: inline-block; box-sizing: border-box" src="../images/daye_picture2.png" />
+<image mode="aspectFit"  style="position: fixed; left: 198rpx; top: 779rpx; width: 125rpx; height: 73rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
+<image mode="aspectFit"  style="position: fixed; left: 110rpx; top: 72rpx; width: 125rpx; height: 73rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
+<image mode="aspectFit"  style="position: fixed; left: 25rpx; top: 446rpx; width: 125rpx; height: 73rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
+
+<image mode="aspectFit"  style="position: fixed; left: 531rpx; top: 551rpx; width: 125rpx; height: 73rpx; display: block; box-sizing: border-box" src="../images/die4.png" />
+
+
+
+
+
+
+
+
