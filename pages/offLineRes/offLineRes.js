@@ -9,7 +9,7 @@ Page({
   },
   tapAgain(){
     wx.redirectTo({
-      url: '../offLine1/offLine1',
+      url: '../offLine2/offLine2',
     })
   },
   tapStop(){

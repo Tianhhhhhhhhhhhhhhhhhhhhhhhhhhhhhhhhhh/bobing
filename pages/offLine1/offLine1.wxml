@@ -2,7 +2,7 @@
 
 <block wx:for="{{lists}}" wx:key="{{index}}">
   <text>Player {{index + 1}}</text>
-  <input class='create' id="{{index}}" placeholder="Name" bindinput='bindKeyInput'></input>
+  <input class='create' id="{{index}}" placeholder="Name" bindinput='bindKeyInput' maxlength='8'></input>
   <text>\n</text>
 </block>
 <button class='add' bindtap='addList'>多个人</button>

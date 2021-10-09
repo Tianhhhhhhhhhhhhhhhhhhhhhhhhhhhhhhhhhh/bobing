@@ -1,4 +1,5 @@
 // pages/offLine2/offLine2.js
+const app = getApp()
 Page({
 
   /**
@@ -8,7 +9,6 @@ Page({
     value: []
   },
   tapBegin() {
-
     wx.redirectTo({
       url: '../offLine3/offLine3',
     })
@@ -17,7 +17,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    app.globalData.index = 0
+    app.globalData.dies = []
+    app.globalData.res = []
   },
 
   /**
