@@ -33,7 +33,9 @@ Page({
   onLoad: function (options) {
     wx.cloud.init()
     const db = wx.cloud.database()
-    db.collection('again').where({}).remove({
+    db.collection('again').where({
+      room: getApp().globalData.room
+    }).remove({
       success: function (res) {
         console.log(res.data)
       }
